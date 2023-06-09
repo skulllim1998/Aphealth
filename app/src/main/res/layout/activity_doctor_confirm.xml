@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEBEF"
+    tools:context=".DoctorConfirmActivity">
+
+    <TextView
+        android:id="@+id/tv_doctor_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Appointment"
+        android:textColor="#00539C"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_doctor_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doctor_confirm"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_doctor_confirm_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Date"
+            android:textColor="#00539C"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_doctor_confirm"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="390dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_below="@+id/tv_doctor_confirm_date"/>
+
+        <TextView
+            android:id="@+id/tv_doctor_confirm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginLeft="16dp"
+            android:textColor="#00539C"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/datePicker"/>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_doctor_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_doctor_confirm_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_doctor_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Confirm Appointment" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

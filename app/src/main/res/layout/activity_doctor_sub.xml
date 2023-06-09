@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEBEF"
+    tools:context=".DoctorSubActivity">
+
+    <ImageButton
+        android:id="@+id/image_btn_arrow_doctor_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@null"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_doctor_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_btn_arrow_doctor_sub">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_doctor_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_doctor_sub"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/medical1" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_doctor_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name_doctor_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18dp"
+                        android:text="@string/multi_vitamins"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_specialist_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name_doctor_sub"
+                        android:layout_marginStart="16dp"
+                        android:textSize="18dp"
+                        android:text="@string/pils_90"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_location_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_specialist_sub"
+                        android:layout_marginStart="16dp"
+                        android:textSize="18dp"
+                        android:text="@string/pils_90"
+                        android:textColor="@color/color_7" />
+
+                    <TextView
+                        android:id="@+id/tv_about_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_location_sub"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textSize="18dp"
+                        android:text="About"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_about_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_about_sub_title"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:textSize="18dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/info_detail"
+                        android:textColor="@color/color_7" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_about_sub"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:textSize="18dp"
+                        android:text="Patient"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_experience_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_about_sub"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_toEndOf="@+id/tv_patient_sub"
+                        android:text="Experience"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/btn_add_to_basket_sub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_experience_sub"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Book an Appointment" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
